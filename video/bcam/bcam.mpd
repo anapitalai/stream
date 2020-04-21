@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT3M2.8S"
+	minBufferTime="PT12.2S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<Period start="PT0.0S">
+		<AdaptationSet contentType="video" segmentAlignment="true" bitstreamSwitching="true" frameRate="79050000/5485999">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.640028" bandwidth="834786" width="1600" height="900" frameRate="79050000/5485999">
+				<SegmentTemplate timescale="15360" initialization="$RepresentationID$-init.m4s" media="$RepresentationID$-$Time$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="150528" />
+						<S d="94207" />
+						<S d="98816" />
+						<S d="103936" />
+						<S d="91649" />
+						<S d="94207" />
+						<S d="102401" />
+						<S d="113664" />
+						<S d="84479" />
+						<S d="95744" />
+						<S d="90113" />
+						<S d="409599" />
+						<S d="294912" />
+						<S d="414720" />
+						<S d="137728" />
+						<S d="114688" />
+						<S d="188416" />
+						<S d="129030" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet contentType="audio" segmentAlignment="true" bitstreamSwitching="true">
+			<Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="118317" audioSamplingRate="48000">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="48000" initialization="$RepresentationID$-init.m4s" media="$RepresentationID$-$Time$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="471039" />
+						<S d="293888" />
+						<S d="309248" />
+						<S d="324608" />
+						<S d="286720" />
+						<S d="293888" />
+						<S d="320512" />
+						<S d="355328" />
+						<S d="263168" />
+						<S d="300032" />
+						<S d="281600" />
+						<S d="1280000" />
+						<S d="921600" />
+						<S d="1295360" />
+						<S d="431104" />
+						<S d="358400" />
+						<S d="588800" />
+						<S d="398961" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>

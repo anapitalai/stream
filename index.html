@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+
+  <title>Survey and Land Studies Streaming Server</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link href="css/cover.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+          <div class="inner">
+            <h3 class="masthead-brand">UNITECH-TUBE</h3>
+            <nav>
+              <ul class="nav masthead-nav">
+                
+                <li class="active"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/DASH_Adaptive_Streaming_for_HTML_5_Video">Mozilla Developer</a></li>
+                <!---
+                <li><a href="#">Lectures</a></li>
+                <li><a href="#">Notices</a></li>-->
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="inner cover">
+          <div class="jumbotron">
+            <h1 class="cover-heading">Lectures</h1>
+            <div class="well">
+              A trial streaming site using DASH(Dynamic Adaptive Streaming over HTTP)
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6 col-lg-4">
+                <div class="well">24 Hrs Movie(800MB+)</div>
+              <video data-dashjs-player autoplay="false" src="video/mpd/24hrs.mpd" controls></video>
+
+            </div>
+            <div class="col-xs-6 col-lg-4">
+                <div class="well">SL 361 Lecture(300MB+)</div>
+              <video data-dashjs-player autoplay="false" src="video/sl361/sl361.mpd" controls></video>
+
+            </div>
+            <div class="col-xs-6 col-lg-4">
+                <div class="well">Bandicam Video</div>
+              <video data-dashjs-player autoplay="false" src="video/bcam/bcam.mpd" controls></video>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>Designed by <a href="https://anapitalai.github.io/">NICTC</a> / <a
+                href="https://twitter.com/anapitalai">anapitalai</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+ <script src="js/dashapp.js"></script>
+  <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+</body>
+
+</html>
